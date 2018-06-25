@@ -28,3 +28,18 @@
     (sqrt-iter 1.0 x))
 
 (display (sqrt 4))
+
+; ----------------------------------------
+
+(define (sqrt x)
+    (define (improve guess)
+        (/ (+ guess (/ x guess)) 2))
+    (define (good-enough? guess)
+        (< (abs (- x (* guess guess))) 0.001))
+    (define (sqrt-iter guess)
+        (if (good-enough? guess)
+            guess
+            (sqrt-iter (improve guess))))
+    (sqrt-iter 1.0))
+
+(display (sqrt 4))
