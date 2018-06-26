@@ -4,6 +4,7 @@
         (* n (factorial (- n 1)))))
 
 (display (factorial 6))
+(newline)
 
 ; -----------------------------------------
 
@@ -15,3 +16,4 @@
     (fact-iter 1 1))
 
 (display (factorial 6))
+(newline)
