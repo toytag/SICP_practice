@@ -29,6 +29,7 @@
     (sqrt-iter 1.0 x))
 
 (display (sqrt 4))
+(newline)
 
 ; ----------------------------------------
 
@@ -44,3 +45,4 @@
     (sqrt-iter 1.0))
 
 (display (sqrt 4))
+(newline)
